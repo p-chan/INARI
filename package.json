@@ -1,0 +1,22 @@
+{
+  "name": "inari",
+  "version": "0.0.0",
+  "description": "simple and cute blog service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:p1ch-jp/INARI.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "@p1ch_jp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p1ch-jp/INARI/issues"
+  },
+  "homepage": "https://github.com/p1ch-jp/INARI"
+}
