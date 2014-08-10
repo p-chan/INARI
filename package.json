@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/p1ch-jp/INARI/issues"
   },
-  "homepage": "https://github.com/p1ch-jp/INARI"
+  "homepage": "https://github.com/p1ch-jp/INARI",
+  "dependencies": {
+    "jade": "^1.5.0"
+  }
 }
