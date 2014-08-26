@@ -3,7 +3,6 @@ var fs = require('fs');
 var index = require('./core/index.js');
 var flow = require('nimble');
 var jade = require('jade');
-// var sqlite3 = require('sqlite3').verbose();
 
 var server = http.createServer();
 server.on('request', doRequest);
@@ -19,15 +18,17 @@ function doRequest (req, res) {
     case '/login/':
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write('please input addres and password.');
+      res.end();
       break;
     case '/inari/':
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write("Welcome to inari");
+      res.end();
       break;
     default:
       res.writeHead(404, {'Content-Type': 'text/plain'});
       res.write('404 Not Found!!');
+      res.end();
       break;
   }
-  res.end();
 }

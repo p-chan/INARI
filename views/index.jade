@@ -7,5 +7,10 @@ html(lang="ja")
     meta(name='author' content='#{author}')
   body
     h1= title
-    p hello world
-    p= content
+    h2 Recented Posts
+    - var posts = post;
+    - console.log(posts);
+    - console.log(posts[0].title);
+    p #{posts[2].title}
+    - each apost in posts
+      li #{apost.title}
