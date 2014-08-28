@@ -9,7 +9,7 @@ exports.func = function indexReq (req, res) {
   var dbPath = 'content/data/inari.db';
   var db = new sqlite3.Database(dbPath);
   db.serialize(function () {
-    db.all('SELECT title, created_at FROM post LIMIT 8;', function (err, post) {
+    db.all('SELECT title, created_at, slug FROM post ORDER BY created_at DESC;', function (err, post) {
       if (err) {
         console.log("err");
       } else {

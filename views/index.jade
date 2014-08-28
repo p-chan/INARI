@@ -9,8 +9,8 @@ html(lang="ja")
     h1= title
     h2 Recented Posts
     - var posts = post;
-    - console.log(posts);
-    - console.log(posts[0].title);
-    p #{posts[2].title}
+    ul
     - each apost in posts
-      li #{apost.title}
+      li
+        h2
+          a(href="/#{apost.slug}/") #{apost.title}

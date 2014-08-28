@@ -1,6 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var index = require('./core/index.js');
+var post = require('./core/post.js');
 var flow = require('nimble');
 var jade = require('jade');
 
@@ -26,9 +27,7 @@ function doRequest (req, res) {
       res.end();
       break;
     default:
-      res.writeHead(404, {'Content-Type': 'text/plain'});
-      res.write('404 Not Found!!');
-      res.end();
+      post.func(req, res);
       break;
   }
 }
