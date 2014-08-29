@@ -1,0 +1,15 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset='utf-8')
+    title= title
+    meta(name='description' content='#{description}')
+    meta(name='author' content='#{author}')
+  body
+    h1= title
+    ul
+      - each post in posts
+        li
+          h2
+            a(href="/#{post.slug}/") #{post.title}
+          time #{post.created_at}

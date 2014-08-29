@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "simple and cute blog service",
   "main": "app.js",
+  "bin": {
+    "inari": "app.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +25,6 @@
   "dependencies": {
     "async": "^0.9.0",
     "jade": "^1.5.0",
-    "nimble": "0.0.2",
     "sqlite3": "^2.2.7"
   }
 }

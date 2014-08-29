@@ -2,7 +2,6 @@ var http = require('http');
 var fs = require('fs');
 var index = require('./core/index.js');
 var post = require('./core/post.js');
-var flow = require('nimble');
 var jade = require('jade');
 
 var server = http.createServer();
@@ -16,18 +15,15 @@ function doRequest (req, res) {
     case '/':
       index.func(req, res);
       break;
-    case '/login/':
-      res.writeHead(200, {'Content-Type': 'text/html'});
-      res.write('please input addres and password.');
-      res.end();
-      break;
     case '/inari/':
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write("Welcome to inari");
       res.end();
       break;
     default:
-      post.func(req, res);
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      res.write("404 Not Found!!");
+      res.end();
       break;
   }
 }
