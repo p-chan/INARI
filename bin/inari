@@ -22,8 +22,8 @@ if (process.argv.length < 3) {
   return inari.run();
 } else {
   if (program.init) {
-    var dirName = ('%s', program.init);
-    return inari.init(dirName);
+    var arg = ('%s', program.init);
+    inari.init(arg);
   }
   if (program.new) return inari.new();
   if (program.deploy) return inari.deploy();
