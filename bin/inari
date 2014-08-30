@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+'use strict';
+
+/*
+  Module dependencies.
+*/
+var program = require('commander');
+var inari = require('../lib/inari');
+
+/*
+  Command
+*/
+program
+  .version(require('../package.json').version)
+  .option('-i, --init [Dir]', 'Create New Directory.')
+  .option('-n, --new [File]', 'Create New Post.')
+  .option('-d, --deploy', 'Deploy ./build/ directory.')
+  .parse(process.argv);
+
+if (process.argv.length < 3) {
+  return inari.run();
+} else {
+  if (program.init) {
+    var dirName = ('%s', program.init);
+    return inari.init(dirName);
+  }
+  if (program.new) return inari.new();
+  if (program.deploy) return inari.deploy();
+};

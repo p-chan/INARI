@@ -1,0 +1,31 @@
+{
+  "name": "inari",
+  "version": "0.0.0",
+  "description": "simple blog generator.",
+  "main": "index.js",
+  "bin": {
+    "inari": "bin/inari"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p1ch-jp/INARI.git"
+  },
+  "keywords": [
+    "blog",
+    "inari"
+  ],
+  "author": "p1ch_jp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p1ch-jp/INARI/issues"
+  },
+  "homepage": "https://github.com/p1ch-jp/INARI",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "commander": "^2.3.0",
+    "shelljs": "^0.3.0"
+  }
+}
