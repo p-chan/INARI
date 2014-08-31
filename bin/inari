@@ -13,18 +13,22 @@ var inari = require('../lib/inari');
 */
 program
   .version(require('../package.json').version)
-  .option('-i, --init [Dir]', 'Create New Directory.')
-  .option('-n, --new [File]', 'Create New Post.')
-  .option('-d, --deploy', 'Deploy ./build/ directory.')
-  .parse(process.argv);
 
-if (process.argv.length < 3) {
-  return inari.run();
-} else {
-  if (program.init) {
-    var arg = ('%s', program.init);
-    inari.init(arg);
-  }
-  if (program.new) return inari.new();
-  if (program.deploy) return inari.deploy();
-};
+program
+  .command('init <name>')
+  .description('create a new blog in the current directory')
+  .action(function(name){
+    var dirName = ('%s', name);
+    return inari.init(dirName);
+});
+
+program
+  .command('build')
+  .description('build to /build')
+  .action(function(){
+    return inari.build();
+});
+
+program.parse(process.argv);
+
+if (!program.args.length) program.help();
