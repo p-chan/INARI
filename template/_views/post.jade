@@ -4,14 +4,20 @@ html(lang="ja")
     meta(charset="utf-8")
     title #{post.title} | #{blog.title}
     meta(name="description" content="#{blog.description}")
-  body
-    header
-      h1
-        a(href="../index.html") #{blog.title}
-      p.description #{blog.description}
-    article
-      header
-        h1 #{post.title}
-        time Posted on #{post.date}
-      div
-        != post.content
+    link(rel="stylesheet", href="../assets/css/main.css")
+  body.post
+    header.header
+      a(href="/")
+        img(src="../assets/img/logo.png", alt="logo", width="150", height="150")
+      h1 #{blog.title}
+      p #{blog.description}
+    main.main
+      article
+        header
+          h1 #{post.title}
+          time Posted on #{post.date}
+        section
+          != post.content
+    footer.footer
+      p All content copyright #{blog.author} © 2014 · All rights reserved.
+      p published with INARI on GitHub
