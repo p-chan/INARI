@@ -1,0 +1,40 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{blog.title}
+    meta(name="description" content="#{blog.description}")
+    meta(name="author" content="#{blog.author}")
+    meta(name="generator" content="INARI")
+    link(rel="stylesheet", href="assets/css/main.css")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Pacifico")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Source+Code+Pro")
+  body.index
+    header.header
+      a(href="./")
+        img(src="assets/img/logo.png", alt="logo", width="150", height="150")
+      h1 #{blog.title}
+      p #{blog.description}
+    main.main
+      for post in posts
+        article
+          h2.postTitle
+            a(href='#{post.url}') #{post.title}
+          p.postMeta
+            | Posted on
+            time(datetime="#{post.date.yyyymmdd}") #{post.date.dddmmmyyyy}
+    footer.footer
+      p.author
+        | Written by
+        br
+        a(href="http://twitter.com/#{blog.twitter}", target="_blank")
+          img(src="http://twiticon.herokuapp.com/#{blog.twitter}", alt="Twitter Icon", width="40", height="40")
+      p All content copyright #{blog.author} &copy; 2014 · All rights reserved.
+      p
+        | published with
+        a(href='', target='_blank') INARI
+        | hosted on
+        a(href='http://github.com', target='_blank') GitHub
