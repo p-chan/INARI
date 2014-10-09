@@ -29,6 +29,13 @@ program
     return inari.build();
 });
 
+program
+  .command('deploy')
+  .description('deploy to github-pages')
+  .action(function(){
+    return inari.deploy();
+});
+
 program.parse(process.argv);
 
 if (!program.args.length) program.help();

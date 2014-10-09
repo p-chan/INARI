@@ -1,7 +1,17 @@
 doctype html
 html(lang="ja")
   head
-    title= title
+    meta(charset="utf-8")
+    title #{blog.title}
+    meta(name="description" content="#{blog.description}")
   body
-    h1= title
-    p= content
+    header
+      h1 #{blog.title}
+      p.description #{blog.description}
+    main
+      ul
+        for post in posts
+          li
+            h2
+              a(href='#{post.url}') #{post.title}
+            time #{post.date}

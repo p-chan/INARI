@@ -32,6 +32,7 @@
     "jade": "^1.6.0",
     "js-beautify": "^1.5.1",
     "marked": "^0.3.2",
+    "readdirp": "^1.1.0",
     "shelljs": "^0.3.0"
   }
 }
