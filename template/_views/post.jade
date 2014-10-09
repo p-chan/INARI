@@ -1,0 +1,43 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{post.title} | #{blog.title}
+    meta(name="description" content="#{blog.description}")
+    meta(name="author" content="#{blog.author}")
+    meta(name="generator" content="INARI")
+    link(rel="stylesheet", href="../assets/css/main.css")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Pacifico")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Source+Code+Pro")
+    link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+  body.post
+    nav
+      a(href="../")
+        img(src="../assets/img/logo.png", alt="logo", width="64", height="64")
+    main.main
+      article
+        header.postHeader
+          h1.postTitle #{post.title}
+          p.postMeta
+            | Posted on
+            time(datetime="#{post.date.yyyymmdd}") #{post.date.dddmmmyyyy}
+        section.postContent
+          != post.content
+        footer.postFooter
+          a(href="http://twitter.com/intent/tweet?text=#{post.title} | #{blog.title}&amp;url=#{blog.url}#{post.url}&amp;via=#{blog.twitter}", onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1'); return false;")
+            i.fa.fa-twitter.fa-2x
+    footer.footer
+      p.author
+        | Written by
+        br
+        a(href="http://twitter.com/#{blog.twitter}", target="_blank")
+          img(src="http://twiticon.herokuapp.com/#{blog.twitter}", alt="Twitter Icon", width="40", height="40")
+      p All content copyright #{blog.author} &copy; 2014 · All rights reserved.
+      p
+        | published with
+        a(href='', target='_blank') INARI
+        | hosted on
+        a(href='http://github.com', target='_blank') GitHub

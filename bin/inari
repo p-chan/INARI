@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+'use strict';
+
+/*
+  Module dependencies.
+*/
+var program = require('commander');
+var inari = require('../lib/inari');
+
+/*
+  Command
+*/
+program
+  .version(require('../package.json').version)
+
+program
+  .command('init <name>')
+  .description('create a new blog in the current directory')
+  .action(function(name){
+    var dirName = ('%s', name);
+    return inari.init(dirName);
+});
+
+program
+  .command('build')
+  .description('build to /build')
+  .action(function(){
+    return inari.build();
+});
+
+program
+  .command('deploy')
+  .description('deploy to github-pages')
+  .action(function(){
+    return inari.deploy();
+});
+
+program.parse(process.argv);
+
+if (!program.args.length) program.help();
