@@ -226,7 +226,7 @@ body {
 }
 
 .index article .postTitle {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -250,8 +250,8 @@ body {
 }
 
 .index article .postMeta {
-  margin: 8px 0 0;
-  font-size: 14px;
+  margin: 4px 0 0;
+  font-size: 12px;
   font-style: italic;
   color: #999;
   letter-spacing: 0.5px;
