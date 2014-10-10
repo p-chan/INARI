@@ -1,6 +1,6 @@
 {
   "name": "inari",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Simple and cool static site generator for weblog.",
   "main": "index.js",
   "bin": {
@@ -18,7 +18,7 @@
     "inari"
   ],
   "author": "p1ch_jp",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/p1ch-jp/INARI/issues"
   },
