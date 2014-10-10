@@ -172,7 +172,7 @@ body {
 
 @media screen and (max-width: 720px) {
   .main {
-    padding: 32px 36px 24px;
+    padding: 32px 16px 24px;
   }
 }
 
@@ -182,6 +182,12 @@ body {
   color: #999;
   line-height: 1.6;
   text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    font-size: 12px;
+  }
 }
 
 .footer .author a {
@@ -206,8 +212,8 @@ body {
 }
 
 .footer a {
-  color: #ffa39c;
-  border-bottom: 1px dashed #ffa39c;
+  color: #45ada8;
+  border-bottom: 1px dashed #45ada8;
   text-decoration: none;
 }
 
@@ -278,7 +284,7 @@ body {
 }
 
 .post nav a img:hover {
-  border: 2px solid #999;
+  border: 2px solid #45ada8;
 }
 
 .post .postHeader {
@@ -302,6 +308,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 720px) {
+  .post .postTItle {
+    font-size: 22px;
+  }
+}
+
 .post .postMeta {
   margin: 4px 0 0;
   font-size: 14px;
@@ -312,9 +324,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 720px) {
+  .post .postMeta {
+    font-size: 12px;
+  }
+}
+
 .post .postContent {
   font-size: 15px;
   line-height: 1.8;
+}
+
+@media screen and (max-width: 720px) {
+  .post .postContent {
+    font-size: 13px;
+  }
 }
 
 .post .postContent h2 {
@@ -326,6 +350,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 720px) {
+  .post .postContent h2 {
+    font-size: 18px;
+  }
+}
+
 .post .postContent h3 {
   margin: 1.2em 0 0;
   font-size: 20px;
@@ -333,6 +363,12 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 720px) {
+  .post .postContent h3 {
+    font-size: 16px;
+  }
 }
 
 .post .postContent p {

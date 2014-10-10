@@ -13,9 +13,6 @@
 - Markdownをコンパイル
 - Jadeテンプレートを使用
 
-### Demo
-
-
 ### Usage
 `$ inari init <name>`
 ブログを作成します。
