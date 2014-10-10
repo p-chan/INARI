@@ -23,7 +23,7 @@ html(lang="ja")
           h1.postTitle #{post.title}
           p.postMeta
             | Posted on
-            time(datetime="#{post.date.yyyymmdd}") #{post.date.dddmmmyyyy}
+            time(datetime="#{post.date.yyyymmddhhmmss}") #{post.date.dddmmmyyyy}
         section.postContent
           != post.content
         footer.postFooter
@@ -37,7 +37,7 @@ html(lang="ja")
           img(src="http://twiticon.herokuapp.com/#{blog.twitter}", alt="Twitter Icon", width="40", height="40")
       p All content copyright #{blog.author} &copy; 2014 · All rights reserved.
       p
-        | published with
+        | published with&nbsp;
         a(href='', target='_blank') INARI
-        | hosted on
+        | &nbsp;hosted on&nbsp;
         a(href='http://github.com', target='_blank') GitHub

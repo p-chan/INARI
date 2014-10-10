@@ -172,7 +172,7 @@ body {
 
 @media screen and (max-width: 720px) {
   .main {
-    padding: 32px 16px 24px;
+    padding: 32px 36px 24px;
   }
 }
 
@@ -182,12 +182,6 @@ body {
   color: #999;
   line-height: 1.6;
   text-align: center;
-}
-
-@media screen and (max-width: 720px) {
-  .footer {
-    font-size: 12px;
-  }
 }
 
 .footer .author a {
@@ -212,8 +206,8 @@ body {
 }
 
 .footer a {
-  color: #45ada8;
-  border-bottom: 1px dashed #45ada8;
+  color: #ffa39c;
+  border-bottom: 1px dashed #ffa39c;
   text-decoration: none;
 }
 
@@ -232,16 +226,10 @@ body {
 }
 
 .index article .postTitle {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (max-width: 720px) {
-  .index article .postTitle {
-    font-size: 16px;
-  }
 }
 
 .index article .postTitle a {
@@ -263,19 +251,12 @@ body {
 
 .index article .postMeta {
   margin: 8px 0 0;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: #999;
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (max-width: 720px) {
-  .index article .postMeta {
-    margin: 6px 0 0;
-    font-size: 10px;
-  }
 }
 
 .post nav {
@@ -297,7 +278,7 @@ body {
 }
 
 .post nav a img:hover {
-  border: 2px solid #45ada8;
+  border: 2px solid #999;
 }
 
 .post .postHeader {
@@ -321,12 +302,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 720px) {
-  .post .postTitle {
-    font-size: 22px;
-  }
-}
-
 .post .postMeta {
   margin: 4px 0 0;
   font-size: 14px;
@@ -337,21 +312,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 720px) {
-  .post .postMeta {
-    font-size: 12px;
-  }
-}
-
 .post .postContent {
   font-size: 15px;
   line-height: 1.8;
-}
-
-@media screen and (max-width: 720px) {
-  .post .postContent {
-    font-size: 14px;
-  }
 }
 
 .post .postContent h2 {
@@ -363,12 +326,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 720px) {
-  .post .postContent h2 {
-    font-size: 18px;
-  }
-}
-
 .post .postContent h3 {
   margin: 1.2em 0 0;
   font-size: 20px;
@@ -376,12 +333,6 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (max-width: 720px) {
-  .post .postContent h3 {
-    font-size: 16px;
-  }
 }
 
 .post .postContent p {
