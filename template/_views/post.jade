@@ -23,7 +23,7 @@ html(lang="ja")
           h1.postTitle #{post.title}
           p.postMeta
             | Posted on
-            time(datetime="#{post.date.yyyymmdd}") #{post.date.dddmmmyyyy}
+            time(datetime="#{post.date.yyyymmddhhmmss}") #{post.date.dddmmmyyyy}
         section.postContent
           != post.content
         footer.postFooter
