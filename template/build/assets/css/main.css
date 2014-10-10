@@ -1,0 +1,484 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*
+INARI Default Stylesheet
+v1.0.0
+Last Updated: 2014-10-10
+Author: Shintaro Fujiwara - http://p1ch.jp/
+Twitter: @p1ch_jp
+*/
+
+/* base */
+
+html {
+  font-family: 'Lato', "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+html ::selection {
+  color: #fff;
+  background: #45ada8;
+}
+
+body {
+  color: #5d5d5d;
+  background: #faf9f4;
+}
+
+/* common */
+
+.header {
+  max-width: 720px;
+  margin: 50px auto 0;
+  padding: 96px 0 88px;
+  text-align: center;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    margin: 0 auto;
+  }
+}
+
+.header h1 {
+  margin: -4px 0 0;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header p {
+  margin: 4px;
+  font-size: 14px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 72px 48px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    padding: 32px 36px 24px;
+  }
+}
+
+.footer {
+  margin: 32px 0 24px;
+  font-size: 14px;
+  color: #999;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer .author a {
+  border-bottom: none;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.footer .author a:hover {
+  opacity: 0.7;
+}
+
+.footer .author a img {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.footer a {
+  color: #ffa39c;
+  border-bottom: 1px dashed #ffa39c;
+  text-decoration: none;
+}
+
+/* page */
+
+.index article {
+  width: 100%;
+  padding: 24px 8px;
+  font-size: 18px;
+  border-bottom: 1px solid #f3f3f3;
+  box-sizing: border-box;
+}
+
+.index article:first-child {
+  border-top: 1px solid #f3f3f3;
+}
+
+.index article .postTitle {
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.index article .postTitle a {
+  color: #5d5d5d;
+  text-decoration: none;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.index article .postTitle a:hover {
+  color: #45ada8;
+}
+
+.index article .postMeta {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post nav {
+  padding: 48px 0 32px;
+  text-align: center;
+}
+
+.post nav a img {
+  border: 2px solid #eee;
+  border-radius: 36px;
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.post nav a img:hover {
+  border: 2px solid #999;
+}
+
+.post .postHeader {
+  text-align: center;
+}
+
+.post .postHeader:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin: 32px auto 44px;
+  background: #ddd;
+}
+
+.post .postTitle {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post .postMeta {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post .postContent {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.post .postContent h2 {
+  margin: 1.6em 0 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post .postContent h3 {
+  margin: 1.2em 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post .postContent p {
+  margin: 1.2em 0 0;
+}
+
+.post .postContent a {
+  color: #45ada8;
+  text-decoration: none;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.post .postContent a:hover {
+  opacity: 0.7;
+}
+
+.post .postContent img {
+  max-width: 100%;
+}
+
+.post .postContent ul {
+  margin: 1.2em 0 0;
+  padding: 0 0 0 2em;
+}
+
+.post .postContent ul li {
+  list-style-type: disc;
+}
+
+.post .postContent ol {
+  margin: 1.2em 0 0;
+  padding: 0 0 0 2.4em;
+}
+.post .postContent ol li {
+  list-style-type: decimal;
+}
+
+.post .postContent hr {
+  width: 20px;
+  height: 1px;
+  margin: 40px auto 40px;
+  border: none;
+  background: #ddd;
+}
+
+.post .postContent table {
+  margin: 1.2em 0 0;
+}
+
+.post .postContent table thead {
+  background: #f0f0f0;
+}
+
+.post .postContent table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.post .postContent table th {
+  padding: .5em 1em;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post .postContent table td {
+  padding: .5em 1em;
+  border: 1px solid #ddd;
+}
+
+.post .postContent blockquote {
+  margin: 1.2em 0 0;
+  padding: .3em 0 .15em 1em;
+  border-left: 3px solid #ddd;
+}
+
+.post .postContent blockquote > *:first-child {
+  margin: 0;
+}
+
+.post .postContent pre {
+  margin: 1.2em 0 0;
+  padding: 1.5em;
+  background: #f1f1f1;
+  border: none;
+  font-family: 'Source Code Pro';
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.post .postContent pre > code {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.post .postContent code {
+  margin: 0 .2em;
+  padding: 0 .1em .1em .2em;
+  background: #F7FAFB;
+  border: 1px solid #E3EDF3;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.post .postFooter {
+  margin: 80px 0 0;
+  text-align: center;
+}
+
+.post .postFooter:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin: 0 auto 24px;
+  background: #ddd;
+}
+
+.post .postFooter a {
+  color: #999;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+}
+
+.post .postFooter a:hover {
+  color: #00aced;
+}
